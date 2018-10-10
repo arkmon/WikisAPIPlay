@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="Fandom" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="zMK-49-Lm7" id="mfs-Je-Ifh"/>
+                <outlet property="view" destination="j6h-bw-l2Q" id="ZbP-TP-gyb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="j6h-bw-l2Q">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zMK-49-Lm7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Raj-xF-e6L"/>
+                        <outlet property="delegate" destination="-1" id="3BU-V5-CMQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zMK-49-Lm7" firstAttribute="leading" secondItem="j6h-bw-l2Q" secondAttribute="leading" id="O7Y-XH-Fo2"/>
+                <constraint firstItem="zMK-49-Lm7" firstAttribute="bottom" secondItem="fGD-dT-ovS" secondAttribute="bottom" id="U6E-Nt-2DH"/>
+                <constraint firstAttribute="trailing" secondItem="zMK-49-Lm7" secondAttribute="trailing" id="iQx-RG-T3X"/>
+                <constraint firstItem="zMK-49-Lm7" firstAttribute="top" secondItem="j6h-bw-l2Q" secondAttribute="top" id="oKG-jW-rBF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fGD-dT-ovS"/>
+            <point key="canvasLocation" x="343.19999999999999" y="-129.98500749625188"/>
+        </view>
+    </objects>
+</document>

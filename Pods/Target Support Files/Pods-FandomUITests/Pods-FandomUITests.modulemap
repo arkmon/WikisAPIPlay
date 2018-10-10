@@ -1,0 +1,6 @@
+framework module Pods_FandomUITests {
+  umbrella header "Pods-FandomUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
